@@ -5,3 +5,10 @@ Z:\B\חזקיהו שרה\Angular\JobSearchServer\obj\Debug\net7.0\JobSearch.Asse
 Z:\B\חזקיהו שרה\Angular\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.CoreCompileInputs.cache
 Z:\B\חזקיהו שרה\Angular\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cs
 Z:\B\חזקיהו שרה\Angular\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cache
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.AssemblyReference.cache
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.GeneratedMSBuildEditorConfig.editorconfig
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.AssemblyInfoInputs.cache
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.AssemblyInfo.cs
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.CoreCompileInputs.cache
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cs
+Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cache
