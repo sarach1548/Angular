@@ -20,7 +20,7 @@ public class JobSearchServerController : ControllerBase
         this.webHost = webHost;
         this.jobsPath = Path.Combine(webHost.ContentRootPath, "Data", "Jobs.json");
         this.usersPath=Path.Combine(webHost.ContentRootPath, "Data", "Users.json");
-        using (var jsonFile = File.OpenText(jobsPath))
+        using (var jsonFile =  System.IO.File.OpenText(jobsPath))
         {
             jobsList = JsonSerializer.Deserialize<List<Job>>(jsonFile.ReadToEnd(),
             new JsonSerializerOptions
@@ -28,13 +28,17 @@ public class JobSearchServerController : ControllerBase
                 PropertyNameCaseInsensitive = true
             });
         }
-        using (var jsonFile = File.OpenText(usersPath))
+        using (var jsonFile = System.IO.File.OpenText(usersPath))
         {
             usersList = JsonSerializer.Deserialize<List<User>>(jsonFile.ReadToEnd(),
             new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             });
+        }
+        foreach (User item in usersList)
+        {
+            System.Console.WriteLine(item.ToString());
         }
     }
 
@@ -50,6 +54,7 @@ public class JobSearchServerController : ControllerBase
     public ActionResult GetUser(string userName, string passward)
     {
         User user = usersList?.Find(u=>u.UserName==userName && u.Passward==passward);
+        System.Console.WriteLine(user?.ToString());
         return Ok(user);
     }
 

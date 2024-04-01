@@ -7,12 +7,15 @@
         public string? Passward { get; set; }
         public Field JobSearchField { get; set; }
 
-        public User(int Id, string UserName,string Passward, int JobSearchField)
-        {
-            this.Id = Id;
-            this.UserName = UserName;
-            this.Passward=Passward;
-            this.JobSearchField = (Field)JobSearchField;
+        // public User(int Id, string UserName,string Passward, int JobSearchField)
+        // {
+        //     this.Id = Id;
+        //     this.UserName = UserName;
+        //     this.Passward=Passward;
+        //     this.JobSearchField = (Field)JobSearchField;
+        // }
+        public string ToString(){
+            return $"ID {Id} UserName {UserName} JobSearchField {JobSearchField}";
         }
     }
 }
