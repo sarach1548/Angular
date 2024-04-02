@@ -1,0 +1,15 @@
+<p>התחברות-------</p>
+<form #f=ngForm>
+    <div>
+        <label >שם משתמש</label>
+        <input  type="text" #name="ngModel" [(ngModel)]="userData.username" name="username" required="true" > 
+        <label  *ngIf="!name.valid&&f.submitted" class="error">*יש להזין שם</label> 
+    </div>
+    <label ></label>
+    <div>
+        <label>סיסמה</label>
+        <input type="password" #password="ngModel" [(ngModel)]="userData.password" name="password" [maxlength]="8" [minlength]="8" required="true">
+        <label  *ngIf="!password.valid&&f.submitted" class="error">*  8 תווים*יש להזין סיסמה תקינה</label> 
+    </div>
+    <button  type="submit" (click)="loginClick()">כניסה</button>
+</form>
