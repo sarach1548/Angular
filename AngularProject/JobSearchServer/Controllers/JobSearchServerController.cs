@@ -36,10 +36,10 @@ public class JobSearchServerController : ControllerBase
                 PropertyNameCaseInsensitive = true
             });
         }
-        foreach (User item in usersList)
-        {
-            System.Console.WriteLine(item.ToString());
-        }
+        // foreach (User item in usersList)
+        // {
+        //     System.Console.WriteLine(item.ToString());
+        // }
     }
 
 
@@ -51,10 +51,10 @@ public class JobSearchServerController : ControllerBase
     }
 
     [HttpGet("GetUserDetails")]
-    public ActionResult GetUser(string userName, string passward)
+    public ActionResult<User> GetUser(string userName, string password)
     {
-        User user = usersList?.Find(u=>u.UserName==userName && u.Passward==passward);
-        System.Console.WriteLine(user?.ToString());
+        User? user = usersList?.FirstOrDefault(u=>u?.UserName==userName && u?.Password==password);
+        Console.WriteLine(user?.ToString());
         return Ok(user);
     }
 

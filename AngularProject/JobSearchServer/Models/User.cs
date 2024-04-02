@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string? UserName { get; set; }
-        public string? Passward { get; set; }
+        public string? Password { get; set; }
         public Field JobSearchField { get; set; }
 
         // public User(int Id, string UserName,string Passward, int JobSearchField)
