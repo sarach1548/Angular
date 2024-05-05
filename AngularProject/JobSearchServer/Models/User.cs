@@ -1,21 +1,23 @@
-﻿namespace JobSearchServer.Models
+﻿﻿namespace JobSearchServer.Models
 {
     public class User
     {
-        public int Id { get; set; }
-        public string? UserName { get; set; }
-        public string? Password { get; set; }
-        public Field JobSearchField { get; set; }
+        public int id { get; set; }
+        public string userName { get; set; }
+        public string password { get; set; }
+        public Field jobSearchField { get; set; }
+        public int cVsSentsAmount { get; set; }
 
-        // public User(int Id, string UserName,string Passward, int JobSearchField)
-        // {
-        //     this.Id = Id;
-        //     this.UserName = UserName;
-        //     this.Passward=Passward;
-        //     this.JobSearchField = (Field)JobSearchField;
-        // }
-        public string ToString(){
-            return $"ID {Id} UserName {UserName} JobSearchField {JobSearchField}";
-        }
+         public User(int id, string userName,string password,Field jobSearchField,int CVsSentsAmount)
+    {
+        this.id=id;
+        this.userName=userName;
+        this.password=password;
+        this.jobSearchField=jobSearchField;
+        this.cVsSentsAmount=CVsSentsAmount;
     }
+    
+    }
+   
+    
 }

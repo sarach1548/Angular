@@ -48,3 +48,45 @@ Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debu
 Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.genruntimeconfig.cache
 Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\ref\JobSearch.dll
 Z:\B\חזקיהו שרה\Angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.sourcelink.json
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.AssemblyReference.cache
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.GeneratedMSBuildEditorConfig.editorconfig
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.AssemblyInfoInputs.cache
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.AssemblyInfo.cs
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.CoreCompileInputs.cache
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cs
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.MvcApplicationPartsAssemblyInfo.cache
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\appsettings.Development.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\appsettings.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Data\Jobs.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Data\Users.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\JobSearch.exe
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\JobSearch.deps.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\JobSearch.runtimeconfig.json
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\JobSearch.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\JobSearch.pdb
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\angular\Angular\AngularProject\JobSearchServer\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets\msbuild.JobSearch.Microsoft.AspNetCore.StaticWebAssets.props
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets\msbuild.build.JobSearch.props
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.JobSearch.props
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.JobSearch.props
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets.pack.json
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets.build.json
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\staticwebassets.development.json
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\scopedcss\bundle\JobSearch.styles.css
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.csproj.CopyComplete
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.dll
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\refint\JobSearch.dll
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.pdb
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\JobSearch.genruntimeconfig.cache
+D:\angular\Angular\AngularProject\JobSearchServer\obj\Debug\net7.0\ref\JobSearch.dll

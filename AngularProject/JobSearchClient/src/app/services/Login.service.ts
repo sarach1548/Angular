@@ -8,15 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
     constructor(private http: HttpClient) {
-        //this.getUserFromServer('a', 'a');
     }
-    courselist: User[] = []
-
 
     getUserFromServer(UserName: string, Password: string):Observable<any> {
        return this.http.get(`https://localhost:7120/JobSearchServer/GetUserDetails?userName=${UserName}&password=${Password}`)
-           
-    }////////////////////////////
+
+    }
 
 
 }

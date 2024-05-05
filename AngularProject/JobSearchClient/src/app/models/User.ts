@@ -1,14 +1,10 @@
-﻿
-// public string ToString(){
-//     return $"ID {Id} UserName {UserName} JobSearchField {JobSearchField}";
-// }
-
-
-import { Field } from "./Field";
+﻿﻿import { Field } from "./Field";
 
 export interface User {
-    UserName: string;
-    Id: number;
-    Password: string;
-    JobSearchField: Field;
+    id: number;
+    userName: string;
+    password: string;
+    jobSearchField: Field;
+    cVsSentsAmount:number;
+
 }

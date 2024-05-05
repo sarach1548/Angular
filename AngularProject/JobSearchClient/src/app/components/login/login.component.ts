@@ -1,37 +1,30 @@
+import { Component } from '@angular/core';
 import { LoginService } from '../../services/Login.service';
-import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
-
+import { Router } from "@angular/router"
+import { Field } from '../../models/Field';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
-  constructor(private loginSVC: LoginService) {
+  constructor(private loginSVC: LoginService, private router: Router) {
 
   }
   userData: any = { username: '', password: '' }
-
-  submitted: boolean = false;
-
-
   loginClick() {
-    this.loginSVC.getUserFromServer(this.userData.username,this.userData.password) .subscribe((res: any) => {
-     if( res !=null){
-       localStorage.setItem('user', JSON.stringify(res));
-       alert(` ברוך הבא ${this.userData.username}!`);
-       ///link 
+    this.loginSVC.getUserFromServer(this.userData.username, this.userData.password).subscribe((res: any) => {
+      if (res != null) {
+        res.password = 'secret';
+        localStorage.setItem('user', JSON.stringify(res));
+        alert(` ברוך הבא ${this.userData.username}!`);
+        this.router.navigate([`positions/${Field[res.jobSearchField]}`])
       }
-      else{
-         localStorage.setItem('user', '');
-         alert("שם משתמש או סיסמה שגויים")
+      else {
+        localStorage.setItem('user', '');
+        alert("user not exist ☹️ !")
       }
-      console.log(res);
-  });
-}
-
-
-
-
+    }
+    );
+  }
 }

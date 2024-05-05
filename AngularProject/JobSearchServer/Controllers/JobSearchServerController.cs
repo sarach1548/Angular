@@ -53,14 +53,22 @@ public class JobSearchServerController : ControllerBase
     [HttpGet("GetUserDetails")]
     public ActionResult<User> GetUser(string userName, string password)
     {
-        User? user = usersList?.FirstOrDefault(u=>u?.UserName==userName && u?.Password==password);
+        User? user = usersList?.FirstOrDefault(u=>u?.userName==userName && u?.password==password);
         Console.WriteLine(user?.ToString());
         return Ok(user);
     }
 
-    // private void saveToFile()
-    // {
-    //     File.WriteAllText(filePath, JsonSerializer.Serialize(users));
-    // }
+    [HttpPost("updateCvsSents")]
+    public ActionResult updateCvsSents(int id){
+        User? user = usersList?.FirstOrDefault(u=>u?.id==id);
+        user.cVsSentsAmount++;
+        saveToFile();
+        Console.WriteLine(user?.ToString());
+        return Ok(user);
+    }
+    private void saveToFile()
+    {
+        System.IO.File.WriteAllText(usersPath, JsonSerializer.Serialize(usersList));
+    }
 }
 

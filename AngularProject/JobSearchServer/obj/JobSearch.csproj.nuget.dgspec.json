@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\B\\חזקיהו שרה\\Angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj": {}
+    "D:\\angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj": {}
   },
   "projects": {
-    "Z:\\B\\חזקיהו שרה\\Angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj": {
+    "D:\\angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\B\\חזקיהו שרה\\Angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj",
+        "projectUniqueName": "D:\\angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj",
         "projectName": "JobSearch",
-        "projectPath": "Z:\\B\\חזקיהו שרה\\Angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj",
-        "packagesPath": "C:\\Users\\huser\\.nuget\\packages\\",
-        "outputPath": "Z:\\B\\חזקיהו שרה\\Angular\\Angular\\AngularProject\\JobSearchServer\\obj\\",
+        "projectPath": "D:\\angular\\Angular\\AngularProject\\JobSearchServer\\JobSearch.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\angular\\Angular\\AngularProject\\JobSearchServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\huser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -99,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
