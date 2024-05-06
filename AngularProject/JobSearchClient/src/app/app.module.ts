@@ -11,6 +11,11 @@ import { PositionComponent } from './components/position/position.component';
 import { PositionListComponent } from './components/position-list/position-list.component';
 import { PositionDetailsComponent } from './components/position-details/position-details.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PositionFilterComponent } from './components/position-filter/position-filter.component';
+import { PositionsPageComponent } from './components/positions-page/positions-page.component';
+import { PositionsSentCvListComponent } from './components/positions-sent-cv-list/positions-sent-cv-list.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PositionComponent,
     PositionListComponent,
     PositionDetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PositionFilterComponent,
+    PositionsPageComponent,
+    PositionsSentCvListComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

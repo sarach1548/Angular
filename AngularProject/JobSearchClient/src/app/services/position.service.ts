@@ -24,4 +24,10 @@ export class positionService {
     filterJobsByField(field:Field){
         return this.jobList.filter(job=>job.jobField==field);
     }
+    getFields() {
+        return Object.values(Field).filter(field => Number.isNaN(Number(field)));
+    }
+    getAreas() {
+        return ['Center','Jerusalem','Rannana'];
+    }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../../models/User';
 import { Field } from '../../models/Field';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,22 +19,15 @@ export class HomeComponent {
 
   getField() {
     if (this.currentUser) {
+      console.log(localStorage.getItem('user'));
       console.log(this.currentUser.cVsSentsAmount);
-      
       return Field[this.currentUser.jobSearchField].toLowerCase()
     }
     return 'positions';
   }
-  // positionOnclick() {
-  //   if (this.currentUser)
-  //     this.router.navigate([`positions/${this.getField()}`])
-  //   else {
-  //     alert('User not logged in! Please login! ')
-  //     this.router.navigate([`/login`])
+  
 
-  //   }
-
-  // }
+  
 
 
 
