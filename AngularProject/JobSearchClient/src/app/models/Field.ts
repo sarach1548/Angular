@@ -1,5 +1,6 @@
 
 export enum Field {
+    ALL,
     SYSTEM_ANALYST,
     SOFTWARE_DEVELOPER,
     SOFTWARE_TESTER,

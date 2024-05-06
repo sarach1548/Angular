@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-position-details',
   templateUrl: './position-details.component.html',
-  styleUrl: './position-details.component.css'
+  styleUrls: [ './position-details.component.scss']
 })
 export class PositionDetailsComponent {
-
+  @Input()
+  jobDetails: any | null = null;
 }

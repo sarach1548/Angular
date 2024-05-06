@@ -13,7 +13,7 @@ import { PositionDetailsComponent } from './components/position-details/position
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PositionFilterComponent } from './components/position-filter/position-filter.component';
 import { PositionsPageComponent } from './components/positions-page/positions-page.component';
-import { PositionsSentCvListComponent } from './components/positions-sent-cv-list/positions-sent-cv-list.component';
+import { PositionsSentCVListComponent } from './components/positions-sent-cv-list/positions-sent-cv-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -28,7 +28,7 @@ import { HeaderComponent } from './components/header/header.component';
     NotFoundComponent,
     PositionFilterComponent,
     PositionsPageComponent,
-    PositionsSentCvListComponent,
+    PositionsSentCVListComponent,
     FooterComponent,
     HeaderComponent
   ],

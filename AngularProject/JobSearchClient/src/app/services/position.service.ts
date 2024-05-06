@@ -1,33 +1,59 @@
 import { HttpClient } from '@angular/common/http'
-import { Injectable } from '@angular/core';
-import { User } from '../models/User'
-import { Observable } from 'rxjs';
+import { Injectable, Type } from '@angular/core';
 import { Job } from '../models/Job';
 import { Field } from '../models/Field';
+import { Observable } from 'rxjs';
 @Injectable({
     providedIn: 'root'
 })
+
 export class positionService {
     constructor(private http: HttpClient) {
         this.getJobsFromServer();
     }
-    jobList: Job[] = [];
+
+    jobsList: Job[] = []
 
     getJobsFromServer() {
-        return this.http.get(`https://localhost:7120/JobSearchServer/GetAllJobs`).subscribe((res: any) => {
-            res.forEach((e: any) => {
-                this.jobList.push(e)
-            });
-        })
+        this.http.get(`https://localhost:7193/jobs/GetAllJobs`).subscribe((res: any) => {
+            res.forEach((job: any) => {
+                this.jobsList.push(job)
+            })
+        });
     }
 
-    filterJobsByField(field:Field){
-        return this.jobList.filter(job=>job.jobField==field);
+    getJobFromServer(JobId: number): Observable<any> {
+        return this.http.get(`https://localhost:7193/jobs/GetJob?id=${JobId}`)
     }
+
+    updateUserJobsSentCV(UserId: number, jobName: string): Observable<any> {
+        return this.http.put(`https://localhost:7193/users/updateJobsSentCV?id=${UserId}&jobName=${jobName}`, null)
+    }
+
+    filterJobs(field: string | undefined, area: string | null) {
+        console.log(field, area);
+        console.log(this.jobsList);
+
+        let filterList = this.jobsList.filter(job =>
+            (field === undefined || (field === Field[Field.ALL].toLowerCase()) || Field[job.jobField].toLowerCase() === field) &&
+            (area === null || area === 'all' || job.area === area)
+        )
+
+        console.log(this.jobsList);
+        return filterList
+    }
+
+    public get getJobsList() {
+        return this.jobsList
+    }
+
     getFields() {
         return Object.values(Field).filter(field => Number.isNaN(Number(field)));
     }
     getAreas() {
-        return ['Center','Jerusalem','Rannana'];
+        return this.http.get(`https://localhost:7193/jobs/GetAreas`)
     }
 }
+
+
+

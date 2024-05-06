@@ -1,1 +1,12 @@
-<p>position works!</p>
+<div>
+    <h1>{{job?.jobName}}</h1>
+    <h2>{{getField()}}</h2>
+    <p>scope of hours: {{job?.scopeOfHours}}</p>
+    <p>area: {{job?.area}}</p>
+    <app-position-details *ngIf="details"
+        [jobDetails]="{requirements:job?.requirements,workFromHome:job?.workFromHome}">
+    </app-position-details>
+    <button *ngIf="!details" [routerLink]="'/'+job?.id+'/details'"> more details </button>
+    <button *ngIf="details" (click)="sendCvClick()">send CV</button>
+</div>
+
