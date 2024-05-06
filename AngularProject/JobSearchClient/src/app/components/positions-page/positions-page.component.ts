@@ -8,33 +8,36 @@ import { positionService } from '../../services/position.service';
   templateUrl: './positions-page.component.html',
   styleUrls: ['./positions-page.component.scss']
 })
-export class PositionsPageComponent implements OnInit{
-  constructor(private positionSvc:positionService, private actRouter:ActivatedRoute,private router:Router){
+export class PositionsPageComponent implements OnInit {
+  constructor(private positionSvc: positionService, private actRouter: ActivatedRoute, private router: Router) {
   }
-  jobsforView:Job[] =[]
-  positionsSentCv:string[]=[]
+  jobsforView: Job[] |any = []
+  positionsSentCv: string[] = []
 
   ngOnInit(): void {
-    
+
     if (localStorage.getItem('user') === null) {
       alert('User not logged in! Please log in! ')
       this.router.navigate([`/login`])
     }
 
-    this.actRouter.params.subscribe(params=>
-      {
-        let field=params['field']
-        console.log(field);
-        this.jobsforView=this.positionSvc.filterJobs(field,null);
-      }
-    ) 
-  
-    this.positionsSentCv=JSON.parse(localStorage.getItem('user')!).jobsSentCV;
+    this.actRouter.params.subscribe(params => {
+      let field = params['field'] || 'all'
+      console.log(field);
+      this.positionSvc.filterJobs(field, 'all').then(res =>
+        this.jobsforView = res
+      );
+    }
+    )
+
+    this.positionsSentCv = JSON.parse(localStorage.getItem('user')!).jobsSentCV;
   }
 
-  filterChange($event:any){
+  filterChange($event: any) {
     let filterDetails = $event
-    this.jobsforView=this.positionSvc.filterJobs(filterDetails.field,filterDetails.area);
+    this.positionSvc.filterJobs(filterDetails.field, filterDetails.area).then(res =>
+      this.jobsforView = res
+    );
   }
-  
+
 }

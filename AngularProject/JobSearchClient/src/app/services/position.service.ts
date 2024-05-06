@@ -3,23 +3,18 @@ import { Injectable, Type } from '@angular/core';
 import { Job } from '../models/Job';
 import { Field } from '../models/Field';
 import { Observable } from 'rxjs';
+import { resolve } from 'node:path';
 @Injectable({
     providedIn: 'root'
 })
 
 export class positionService {
     constructor(private http: HttpClient) {
-        this.getJobsFromServer();
     }
 
-    jobsList: Job[] = []
 
-    getJobsFromServer() {
-        this.http.get(`https://localhost:7193/jobs/GetAllJobs`).subscribe((res: any) => {
-            res.forEach((job: any) => {
-                this.jobsList.push(job)
-            })
-        });
+    getJobsFromServer(): Observable<Job[]> {
+        return this.http.get<Job[]>(`https://localhost:7193/jobs/GetAllJobs`)
     }
 
     getJobFromServer(JobId: number): Observable<any> {
@@ -30,22 +25,20 @@ export class positionService {
         return this.http.put(`https://localhost:7193/users/updateJobsSentCV?id=${UserId}&jobName=${jobName}`, null)
     }
 
-    filterJobs(field: string | undefined, area: string | null) {
-        console.log(field, area);
-        console.log(this.jobsList);
-
-        let filterList = this.jobsList.filter(job =>
-            (field === undefined || (field === Field[Field.ALL].toLowerCase()) || Field[job.jobField].toLowerCase() === field) &&
-            (area === null || area === 'all' || job.area === area)
-        )
-
-        console.log(this.jobsList);
-        return filterList
+    filterJobs(field: string, area: string) {
+        let filterList
+        return new Promise((resolve) =>
+            this.getJobsFromServer().subscribe(
+                (res: Job[]) => {
+                    filterList = res.filter(job =>
+                        (field ==='all' || Field[job.jobField].toLowerCase() === field) &&
+                        (area === 'all' || job.area === area)
+                    )
+                    resolve(filterList)
+                },
+            ))
     }
 
-    public get getJobsList() {
-        return this.jobsList
-    }
 
     getFields() {
         return Object.values(Field).filter(field => Number.isNaN(Number(field)));
